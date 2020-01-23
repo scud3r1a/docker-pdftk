@@ -5,4 +5,5 @@ RUN apk add --no-cache pdftk
 WORKDIR /data
 VOLUME /data
 
-CMD /usr/bin/pdftk
+ENTRYPOINT ["/usr/bin/pdftk"]
+CMD ["--version"]
